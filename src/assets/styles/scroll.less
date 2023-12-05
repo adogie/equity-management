@@ -1,0 +1,41 @@
+html {
+  body {
+    * {
+      box-sizing: border-box;
+    }
+  }
+}
+/* 全局滚动条样式 */
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  box-shadow: inset 0 0 5px rgba(221, 220, 220, 0.2);
+  background: #ddd;
+}
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(201, 201, 201, 0.2);
+  border-radius: 0;
+  background: rgba(201, 201, 201, 0.1);
+}
+:deep *::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+}
+:deep *::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  box-shadow: inset 0 0 5px rgba(221, 220, 220, 0.2);
+  background: #ddd;
+}
+:deep *::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(201, 201, 201, 0.2);
+  border-radius: 0;
+  background: rgba(201, 201, 201, 0.1);
+}
+
+* {
+  scrollbar-color: #e5e5e5 #f7f7f9;
+  scrollbar-width: thin;
+}

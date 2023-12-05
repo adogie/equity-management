@@ -1,0 +1,109 @@
+/**
+* 自定义控股组件样式
+*/
+.ant-select,
+.ant-input-number {
+  width: 100%;
+}
+.ant-btn {
+  border-radius: 4px;
+}
+.ant-input {
+  border-radius: 4px;
+}
+.ant-checkbox-disabled + span {
+  color: rgba(0, 0, 0, 1);
+}
+.ant-input[disabled] {
+  color: rgba(0, 0, 0, 1);
+}
+.ant-input-number-disabled {
+  color: rgba(0, 0, 0, 1);
+}
+.ant-input-number-group-addon {
+  background-color: #eef2fb !important;
+}
+.ant-table {
+  table {
+    border-collapse: collapse !important;
+  }
+  tr {
+    th,
+    td {
+      padding: 10px !important;
+      border: none !important;
+      border: 1px solid #e2e5ed !important;
+    }
+    th {
+      background: #f0f5fb;
+    }
+    th:before {
+      width: 0 !important;
+    }
+  }
+  .table-striped {
+    background-color: #fbfdff;
+  }
+  .ant-table-cell-ellipsis {
+    padding: 10px 15px !important;
+  }
+}
+
+.confirm-modal {
+  .ant-modal-confirm {
+    top: 30% !important;
+    width: 280px !important;
+    .ant-modal-body {
+      padding: 0 !important;
+      .ant-modal-confirm-content {
+        max-width: 100% !important;
+        min-height: 30px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        text-align: center;
+        text-indent: 5px;
+      }
+    }
+
+    .ant-modal-close:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+.ant-modal {
+  .ant-modal-content {
+    background-color: #e3edfd;
+    // padding: 13px 22px 36px 22px;
+    .ant-modal-header {
+      background-color: #e3edfd;
+    }
+  }
+}
+
+.full-modal {
+  .ant-modal {
+    max-width: 100%;
+    top: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  .ant-modal-confirm-content {
+    height: calc(100vh - 80px);
+  }
+  .ant-modal-content {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh);
+  }
+
+  .ant-modal-body {
+    flex: 1;
+  }
+}
+
+.ant-button-normal {
+  background: transparent;
+  border-color: #4096ff;
+  color: #4096ff;
+}

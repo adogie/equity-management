@@ -1,0 +1,52 @@
+{
+  "name": "microvideo-vue-antdv",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:test": "vue-cli-service build --mode uat",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "ant-design-vue": "^4.0.6",
+    "axios": "^0.24.0",
+    "core-js": "^3.33.1",
+    "dayjs": "^1.10.6",
+    "js-cookie": "^3.0.5",
+    "vue": "^3.1.4",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.8",
+    "@vue/cli-plugin-eslint": "~5.0.8",
+    "@vue/cli-service": "~5.0.8",
+    "@vue/compiler-sfc": "^3.1.4",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^11.0.0-beta.2",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.1",
+    "chokidar": "^3.5.2",
+    "eslint": "^7.30.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^8.0.0",
+    "filemanager-webpack-plugin": "^6.1.4",
+    "image-webpack-loader": "^7.0.1",
+    "less": "^4.1.1",
+    "less-loader": "^7.3.0",
+    "prettier": "^2.3.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recess-order": "^2.4.0",
+    "svg-sprite-loader": "^6.0.9"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
